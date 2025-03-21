@@ -1,0 +1,29 @@
+ .chess-board { 
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    border: 2px solid #333; 
+    margin: 20px;
+}
+
+.row {
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.cell {
+    aspect-ratio: auto;}
+.row:nth-child(odd) .cell:nth-child(odd){
+    background: #B22222; 
+    } 
+.row:nth-child(odd) .cell:nth-child(even){
+     background: #000000; 
+}
+.row:nth-child(even) .cell:nth-child(odd){
+     background: #000000; 
+}
+.row:nth-child(even) .cell:nth-child(even){
+     background: #B22222;
+     } 
+
